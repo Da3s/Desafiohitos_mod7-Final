@@ -1,5 +1,6 @@
 from django.contrib.auth.models import User
 from .models import Usuario, Propiedad, Comuna, Tipo_usuario, Tipo_propiedad, Region
+from .forms import *
 
 
 
@@ -7,15 +8,6 @@ from .models import Usuario, Propiedad, Comuna, Tipo_usuario, Tipo_propiedad, Re
 def listar_propiedades():
     propiedades = Propiedad.objects.all()
     return propiedades
-
-
-def crear_propiedad(data):
-    propiedad = Propiedad(nombre = data[0],
-                          comuna = data[9],
-                          )
-    propiedad.save()
-    return propiedad
-
 
 
 def registrar_usuario(username, password, email, rut, nombre, apellidos, direccion, telefono, tipo_usuario_nombre):
@@ -51,3 +43,11 @@ def actualizar_usuario(user_id, rut, nombre, apellidos, direccion, telefono, ema
     return Usuario.objects.get(user=user)
 
 
+def publicar_propiedad(datos_propiedad):
+    form = PropiedadForm(datos_propiedad)
+    if form.is_valid():
+        nueva_propiedad = form.save()
+        return nueva_propiedad
+    else:
+        print(form.errors)
+        return None

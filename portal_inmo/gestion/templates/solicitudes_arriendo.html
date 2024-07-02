@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<div class="container mt-4">
+    <h2>Solicitudes de Arriendo Pendientes</h2>
+    <ul class="list-group mt-3">
+        {% for solicitud in solicitudes %}
+            <li class="list-group-item">
+                <h4>El usuario {{ solicitud.arrendatario.username }} quiere arrendar: {{ solicitud.propiedad.nombre }}</h4>
+                <p>Mensaje: {{ solicitud.mensaje }}</p>
+                <form method="post" action="{% url 'aceptar_solicitud' solicitud.id %}" class="d-inline">
+                    {% csrf_token %}
+                    <button type="submit" class="btn btn-success">Aceptar Solicitud</button>
+                </form>
+                <form method="post" action="{% url 'rechazar_solicitud' solicitud.id %}" class="d-inline">
+                    {% csrf_token %}
+                    <button type="submit" class="btn btn-danger">Rechazar Solicitud</button>
+                </form>
+            </li>
+        {% empty %}
+            <li class="list-group-item">Excelente no tienes solicitudes pendientes.</li>
+        {% endfor %}
+    </ul>
+</div>
+
+{% endblock %}

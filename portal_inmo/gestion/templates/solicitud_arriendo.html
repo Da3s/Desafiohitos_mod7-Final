@@ -2,11 +2,15 @@
 
 {% block content %}
 
-<h1>Solicitar Arriendo para {{ propiedad.nombre }}</h1>
-<form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit">Enviar Solicitud</button>
-</form>
+<div class="container">
+    <h1 class="mt-4">Solicitar Arriendo para {{ propiedad.nombre }}</h1>
+    
+    <form method="post" class="mt-4">
+        {% csrf_token %}
+        {{ form.as_p }}
+
+        <button type="submit" class="btn btn-primary mb-3">Enviar Solicitud</button>
+    </form>
+</div>
 
 {% endblock %}

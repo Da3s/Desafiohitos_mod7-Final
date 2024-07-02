@@ -15,10 +15,24 @@
                       <li class="nav-item">
                           <a class="nav-link" href="{% url 'actualizar_usuario' %}">Actualizar usuario</a>
                       </li>
+                      {% if user.is_authenticated and user.usuario.tipo_usuario.nombre == 'Arrendatario' %}
                       <li class="nav-item">
                         <a class="nav-link" href="{% url 'listar_propiedades' %}">Listar Propiedades</a>
                       </li>
-                      
+                      {% endif %}
+
+                      {% if user.is_authenticated and user.usuario.tipo_usuario.nombre == 'Arrendador' %}
+                      <li class="nav-item">
+                        <a class="nav-link" href="{% url 'publicar_propiedad' %}">Publicar Propiedades</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="{% url 'dashboard_propiedades' %}">Dashboard Propiedades</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="{% url 'solicitudes_arriendo' %}">Solicitudes de Arriendo</a>
+                      </li>
+                      {% endif %}
+
                       {% endif %}
                       
                       {% if user.is_authenticated %}    

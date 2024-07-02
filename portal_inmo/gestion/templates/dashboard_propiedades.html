@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container">
+    <h1 class="mt-4 mb-4">Dashboard de Propiedades</h1>
+    
+    <div class="row">
+        <div class="col-md-8">
+            {% if propiedades %}
+                <ul class="list-group">
+                    {% for propiedad in propiedades %}
+                        <li class="list-group-item">
+                            <h5>{{ propiedad.nombre }}</h5>
+                            <p><strong>Dirección:</strong> {{ propiedad.direccion }}</p>
+
+                            <a href="{% url 'detalle_propiedad' propiedad.pk %}" class="btn btn-primary btn-sm mr-2">Ver Detalles</a>
+                            <form method="post" action="{% url 'dashboard_propiedades' %}">
+                                {% csrf_token %}
+                                <input type="hidden" name="propiedad_id" value="{{ propiedad.pk }}">
+                                <a href="{% url 'editar_propiedad' propiedad.pk %}" class="btn btn-info btn-sm">Editar</a>
+                                <button type="submit" name="delete" class="btn btn-danger btn-sm ml-2" onclick="return confirm('¿Estás seguro que deseas eliminar esta propiedad?')">Eliminar</button>
+                            </form>
+                        </li>
+                    {% endfor %}
+                </ul>
+            {% else %}
+                <p class="mt-4">Aun no publicas ninguna propiedad, animate!!</p>
+            {% endif %}
+        </div>
+        <div class="col-md-4">
+
+            <div class="card mt-4">
+                <div class="card-body">
+                    <h5 class="card-title">Acciones</h5>
+                    <a href="{% url 'publicar_propiedad' %}" class="btn btn-success btn-block">Publicar Nueva Propiedad</a>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+{% endblock %}

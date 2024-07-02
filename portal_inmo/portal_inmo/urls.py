@@ -26,4 +26,11 @@ urlpatterns = [
     path('accounts/', include('django.contrib.auth.urls')),
     path('propiedades/', listar_propiedades, name='listar_propiedades'),
     path('propiedad/<int:propiedad_id>/solicitud_arriendo/', solicitud_arriendo, name='solicitud_arriendo'),
+    path('publicar_propiedad/', publicar_propiedad, name='publicar_propiedad'),
+    path('propiedad/<int:pk>/', detalle_propiedad, name='detalle_propiedad'),
+    path('dashboard/', dashboard_propiedades, name='dashboard_propiedades'),
+    path('propiedad/<int:pk>/editar/', editar_propiedad, name='editar_propiedad'),
+    path('solicitudes/', solicitudes_arriendo, name='solicitudes_arriendo'),
+    path('solicitud/<int:solicitud_id>/aceptar/', aceptar_solicitud, name='aceptar_solicitud'),
+    path('solicitud/<int:solicitud_id>/rechazar/', rechazar_solicitud, name='rechazar_solicitud'),
 ]

@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container mt-4">
+    <h2 class="mb-4">Editar datos de la propiedad</h2>
+    <form method="post">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="id_nombre">Nombre:</label>
+            {{ form.nombre }}
+        </div>
+        <div class="form-group">
+            <label for="id_descripcion">Descripción:</label>
+            {{ form.descripcion }}
+        </div>
+        <div class="form-group">
+            <label for="id_m2_construidos">Metros Cuadrados Construidos:</label>
+            {{ form.m2_construidos }}
+        </div>
+        <div class="form-group">
+            <label for="id_m2_totales">Metros Cuadrados Totales:</label>
+            {{ form.m2_totales }}
+        </div>
+        <div class="form-group">
+            <label for="id_cantidad_estacionamientos">Cantidad de Estacionamientos:</label>
+            {{ form.cantidad_estacionamientos }}
+        </div>
+        <div class="form-group">
+            <label for="id_cantidad_habitaciones">Cantidad de Habitaciones:</label>
+            {{ form.cantidad_habitaciones }}
+        </div>
+        <div class="form-group">
+            <label for="id_cantidad_banios">Cantidad de Baños:</label>
+            {{ form.cantidad_banios }}
+        </div>
+        <div class="form-group">
+            <label for="id_direccion">Dirección:</label>
+            {{ form.direccion }}
+        </div>
+        <div class="form-group">
+            <label for="id_precio_mensual">Precio Mensual:</label>
+            {{ form.precio_mensual }}
+        </div>
+        <div class="form-group">
+            <label for="id_comuna">Comuna:</label>
+            {{ form.comuna }}
+        </div>
+        <div class="form-group">
+            <label for="id_region">Región:</label>
+            {{ form.region }}
+        </div>
+        <div class="form-group">
+            <label for="id_tipo_propiedad">Tipo de Propiedad:</label>
+            {{ form.tipo_propiedad }}
+        </div>
+
+        <button type="submit" class="btn btn-primary">Guardar Cambios</button>
+        <a href="{% url 'dashboard_propiedades' %}" class="btn btn-secondary">Cancelar</a>
+    </form>
+</div>
+
+{% endblock %}

@@ -1,12 +1,12 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, get_object_or_404
 from django.contrib.auth.models import User
 from django.contrib.auth import login, authenticate
 from django.contrib.auth.decorators import login_required, user_passes_test
 from django.http import HttpResponse
 from django.contrib.auth.forms import UserCreationForm
 from django.contrib import messages
-from .services import registrar_usuario
-from .forms import SolicitudArriendoForm
+from .services import *
+from .forms import *
 from .models import *
 
 # Create your views here.
@@ -84,13 +84,11 @@ def actualizar_usuario(request):
             messages.error(request, 'El tipo de usuario no existe.')
             return redirect('actualizar_usuario')
 
-        # Actualizar los datos del usuario de Django
         user = request.user
         user.username = username
         user.email = email
         user.save()
 
-        # Actualizar los datos del modelo Usuario
         usuario.rut = rut
         usuario.nombre = nombre
         usuario.apellidos = apellidos
@@ -110,6 +108,8 @@ def actualizar_usuario(request):
     return render(request, 'actualizar_usuario.html', context)
 
 
+############################ Vistas arrendatario ##################################
+
 # Listar propiedades
 
 def is_arrendatario(user):
@@ -126,7 +126,7 @@ def listar_propiedades(request):
 
     if region_id:
         propiedades = propiedades.filter(region_id=region_id)
-        comunas = comunas.filter(region_id=region_id)  # Filtra las comunas basadas en la región seleccionada
+        comunas = comunas.filter(region_id=region_id)  
 
     if comuna_id:
         propiedades = propiedades.filter(comuna_id=comuna_id)
@@ -169,3 +169,150 @@ def solicitud_arriendo(request, propiedad_id):
         'propiedad': propiedad,
     }
     return render(request, 'solicitud_arriendo.html', context)
+
+
+############################ Fin Vistas arrendatario ##################################
+
+
+################################## Vistas Arrendador ###########################################
+
+
+# Publicar propiedad como Arrendador
+
+def is_arrendador(user):
+    return user.is_authenticated and hasattr(user, 'usuario') and user.usuario.tipo_usuario.nombre == 'Arrendador'
+
+@login_required
+@user_passes_test(is_arrendador)
+def publicar_propiedad(request):
+    if request.method == 'POST':
+        form = PropiedadForm(request.POST)
+        if form.is_valid():
+            nueva_propiedad = form.save(commit=False)
+            arrendador_actual = request.user
+            nueva_propiedad.arrendador = arrendador_actual
+            nueva_propiedad.save()
+            return redirect('detalle_propiedad', pk=nueva_propiedad.pk)
+    else:
+        form = PropiedadForm()   
+            
+    regiones = Region.objects.all()  
+    comunas = Comuna.objects.all()  
+    tipos_propiedad = Tipo_propiedad.objects.all()  
+    context = {'form': form}
+    return render(request, 'publicar_propiedad.html', {'form': form, 'regiones': regiones, 'comunas': comunas, 'tipos_propiedad': tipos_propiedad})
+
+
+
+# Vista detalle de propiedades
+
+def detalle_propiedad(request, pk):
+    propiedad = get_object_or_404(Propiedad, pk=pk)
+    return render(request, 'detalle_propiedad.html', {'propiedad': propiedad})
+
+
+# Vista Dashboard
+
+def is_arrendador(user):
+    return user.is_authenticated and hasattr(user, 'usuario') and user.usuario.tipo_usuario.nombre == 'Arrendador'
+
+@login_required
+@user_passes_test(is_arrendador)
+def dashboard_propiedades(request):
+
+    propiedades = Propiedad.objects.filter(arrendador=request.user)
+
+    if request.method == 'POST':
+
+        if 'delete' in request.POST:
+            propiedad_id = request.POST.get('propiedad_id')
+            if propiedad_id:
+                propiedad = get_object_or_404(Propiedad, pk=propiedad_id)
+                propiedad.delete()
+                return redirect('dashboard_propiedades')
+        elif 'edit' in request.POST:
+            propiedad_id = request.POST.get('propiedad_id')
+            if propiedad_id:
+                propiedad = get_object_or_404(Propiedad, pk=propiedad_id)
+                form = PropiedadForm(request.POST, instance=propiedad)
+                if form.is_valid():
+                    form.save()
+                    return redirect('dashboard_propiedades')
+            else:
+                form = PropiedadForm()
+
+    else:
+        form = PropiedadForm()
+
+    return render(request, 'dashboard_propiedades.html', {'propiedades': propiedades, 'form': form})
+
+
+
+
+# Vista editar propiedad
+
+def is_arrendador(user):
+    return user.is_authenticated and hasattr(user, 'usuario') and user.usuario.tipo_usuario.nombre == 'Arrendador'
+
+@login_required
+@user_passes_test(is_arrendador)
+def editar_propiedad(request, pk):
+    propiedad = get_object_or_404(Propiedad, pk=pk)
+
+    if request.method == 'POST':
+        form = PropiedadForm(request.POST, instance=propiedad)
+        if form.is_valid():
+            form.save()
+            return redirect('detalle_propiedad', pk=pk)
+    else:
+        form = PropiedadForm(instance=propiedad)
+
+    return render(request, 'editar_propiedad.html', {'form': form, 'propiedad': propiedad})
+
+
+
+# Vista para que arrendador pueda ver solicitudes
+
+def is_arrendador(user):
+    return user.is_authenticated and hasattr(user, 'usuario') and user.usuario.tipo_usuario.nombre == 'Arrendador'
+
+@login_required
+@user_passes_test(is_arrendador)
+def solicitudes_arriendo(request):
+    arrendador = request.user 
+    solicitudes_pendientes = SolicitudArriendo.objects.filter(propiedad__arrendador=arrendador, estado='pendiente')
+    return render(request, 'solicitudes_arriendo.html', {'solicitudes': solicitudes_pendientes})
+
+
+
+# Vista para gestionar solicitudes
+
+# Aceptar
+
+def is_arrendador(user):
+    return user.is_authenticated and hasattr(user, 'usuario') and user.usuario.tipo_usuario.nombre == 'Arrendador'
+
+@login_required
+@user_passes_test(is_arrendador)
+def aceptar_solicitud(request, solicitud_id):
+    solicitud = get_object_or_404(SolicitudArriendo, pk=solicitud_id)
+    solicitud.estado = 'aceptada'
+    solicitud.save()
+    return redirect('solicitudes_arriendo')
+
+
+# Rechazar
+
+def is_arrendador(user):
+    return user.is_authenticated and hasattr(user, 'usuario') and user.usuario.tipo_usuario.nombre == 'Arrendador'
+
+@login_required
+@user_passes_test(is_arrendador)
+def rechazar_solicitud(request, solicitud_id):
+    solicitud = get_object_or_404(SolicitudArriendo, pk=solicitud_id)
+    solicitud.estado = 'rechazada'
+    solicitud.save()
+    return redirect('solicitudes_arriendo')
+
+
+################################## Fin Vistas Arrendador ###########################################

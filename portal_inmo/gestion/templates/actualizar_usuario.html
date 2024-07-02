@@ -3,7 +3,7 @@
 {% block content %}
 
 <div class="container mt-5">
-    <h2 class="mb-4">Actualizar Datos de Usuario</h2>
+    <h2 class="mb-4">Actualiza tus datos</h2>
     <form method="post" class="needs-validation" novalidate>
         {% csrf_token %}
         
@@ -59,7 +59,7 @@
             <div class="invalid-feedback">Este campo es requerido.</div>
         </div>
         
-        <button type="submit" class="btn btn-primary mt-3 mb-3">Actualizar</button>
+        <button type="submit" class="btn btn-primary mt-3 mb-3">Actualizar Datos</button>
     </form>
     
     {% if messages %}

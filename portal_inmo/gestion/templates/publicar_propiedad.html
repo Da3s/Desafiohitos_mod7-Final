@@ -1,0 +1,84 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container">
+    <h1 class="mt-4">Publicar Propiedad</h1>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div class="form-group">
+            <label for="id_nombre">Nombre:</label>
+            <input type="text" class="form-control" id="id_nombre" name="nombre" placeholder="Nombre de la propiedad" required>
+        </div>
+        <div class="form-group">
+            <label for="id_descripcion">Descripción:</label>
+            <textarea class="form-control" id="id_descripcion" name="descripcion" placeholder="Descripción de la propiedad" rows="3" required></textarea>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-6">
+                <label for="id_m2_construidos">Metros cuadrados construidos:</label>
+                <input type="number" class="form-control" id="id_m2_construidos" name="m2_construidos" placeholder="Metros cuadrados construidos" required>
+            </div>
+            <div class="form-group col-md-6">
+                <label for="id_m2_totales">Metros cuadrados totales:</label>
+                <input type="number" class="form-control" id="id_m2_totales" name="m2_totales" placeholder="Metros cuadrados totales" required>
+            </div>
+        </div>
+        <div class="form-row">
+            <div class="form-group col-md-4">
+                <label for="id_cantidad_estacionamientos">Cantidad de estacionamientos:</label>
+                <input type="number" class="form-control" id="id_cantidad_estacionamientos" name="cantidad_estacionamientos" value="0" required>
+            </div>
+            <div class="form-group col-md-4">
+                <label for="id_cantidad_habitaciones">Cantidad de habitaciones:</label>
+                <input type="number" class="form-control" id="id_cantidad_habitaciones" name="cantidad_habitaciones" value="0" required>
+            </div>
+            <div class="form-group col-md-4">
+                <label for="id_cantidad_banios">Cantidad de baños:</label>
+                <input type="number" class="form-control" id="id_cantidad_banios" name="cantidad_banios" value="0" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="id_direccion">Dirección:</label>
+            <input type="text" class="form-control" id="id_direccion" name="direccion" placeholder="Dirección de la propiedad" required>
+        </div>
+        <div class="form-group">
+            <label for="id_precio_mensual">Precio mensual:</label>
+            <input type="number" class="form-control" id="id_precio_mensual" name="precio_mensual" placeholder="Precio mensual de arriendo" required>
+        </div>
+        <div class="form-group">
+            <label for="id_region">Region:</label>
+            <select class="form-control" id="id_region" name="region" required>
+                <option value="">Selecciona una region</option>
+                
+                {% for region in regiones %}
+                    <option value="{{ region.id }}">{{ region.nombre }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="id_comuna">Comuna:</label>
+            <select class="form-control" id="id_comuna" name="comuna" required>
+                <option value="">Selecciona una comuna</option>
+                
+                {% for comuna in comunas %}
+                    <option value="{{ comuna.id }}">{{ comuna.nombre }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="id_tipo_propiedad">Tipo de propiedad:</label>
+            <select class="form-control" id="id_tipo_propiedad" name="tipo_propiedad" required>
+                <option value="">Selecciona un tipo de propiedad</option>
+                
+                {% for tipo_propiedad in tipos_propiedad %}
+                    <option value="{{ tipo_propiedad.id }}">{{ tipo_propiedad.nombre }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary mt-2 mb-3">Publicar Propiedad</button>
+    </form>
+</div>
+
+
+{% endblock %}
