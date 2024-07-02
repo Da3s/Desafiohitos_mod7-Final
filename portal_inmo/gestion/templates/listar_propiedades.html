@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+
+<h1>Propiedades en la comuna</h1>
+<form method="get">
+    <select name="region" onchange="this.form.submit()">
+        <option value="">Seleccione una Región</option>
+        {% for region in regiones %}
+            <option value="{{ region.id }}" {% if selected_region == region.id|stringformat:"s" %}selected{% endif %}>
+                {{ region.nombre }}
+            </option>
+        {% endfor %}
+    </select>
+    <select name="comuna" onchange="this.form.submit()">
+        <option value="">Seleccione una Comuna</option>
+        {% for comuna in comunas %}
+            <option value="{{ comuna.id }}" {% if selected_comuna == comuna.id|stringformat:"s" %}selected{% endif %}>
+                {{ comuna.nombre }}
+            </option>
+        {% endfor %}
+    </select>
+</form>
+<ul>
+    {% for propiedad in propiedades %}
+        <li>
+            {{ propiedad.nombre }} - {{ propiedad.direccion }}
+            <a href="{% url 'solicitud_arriendo' propiedad.id %}">Solicitar Arriendo</a>
+        </li>
+    {% endfor %}
+</ul>
+
+{% endblock %}

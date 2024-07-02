@@ -1,0 +1,29 @@
+- se conecta a entorno virtual
+workon proyecto7
+
+
+- Crear proyecto
+django-admin startproject portal_inmo
+
+
+- Crear app
+python manage.py startapp gestion 
+
+se agrega app en settings.py de portal_inmo
+
+
+- Se crea bd y se configura en settings.py
+create database gestion_portal;
+
+DATABASES = {
+    "default": {
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": "gestion_portal",
+        "USER": "postgres",
+        "PASSWORD": "admin1234",
+        "HOST": "127.0.0.1",
+        "PORT": "5432",
+    }
+}
+
+

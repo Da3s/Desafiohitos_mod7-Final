@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-5 mb-5">
+    <div class="alert alert-success text-center" role="alert">
+        EL cierre de sesión se realizo correctamente.
+    </div>
+    <div class="text-center mt-3">
+        <a href="{% url 'indice' %}" class="btn btn-primary">Volver al inicio</a>
+    </div>
+</div>
+{% endblock %}
