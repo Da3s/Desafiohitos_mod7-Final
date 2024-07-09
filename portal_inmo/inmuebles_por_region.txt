@@ -1,0 +1,112 @@
+
+Región: Araucanía
+------------------------------
+Nombre: Departamento en Villarrica
+Descripción: Un departamento frente al Lago.
+Dirección: Calle Falsa 456
+Precio: 500000
+Superficie construida: 60.0 m²
+Superficie total: 70.0 m²
+Habitaciones: 2
+Estacionamientos: 1
+Baños: 2
+Tipo: 2
+
+
+Región: Atacama
+------------------------------
+Nombre: Casa
+Descripción: Casa.
+Dirección: Calle Falsa 456
+Precio: 500000
+Superficie construida: 60.0 m²
+Superficie total: 70.0 m²
+Habitaciones: 2
+Estacionamientos: 1
+Baños: 2
+Tipo: 1
+
+
+Región: Los Lagos
+------------------------------
+Nombre: Departamento 
+Descripción: Un departamento increible.
+Dirección: Calle Falsa 456
+Precio: 500000
+Superficie construida: 60.0 m²
+Superficie total: 70.0 m²
+Habitaciones: 2
+Estacionamientos: 1
+Baños: 2
+Tipo: 2
+
+
+Región: Los Ríos
+------------------------------
+Nombre: Parcela
+Descripción: Parcela con Casa.
+Dirección: Calle Falsa 456
+Precio: 500000
+Superficie construida: 250.0 m²
+Superficie total: 5000.0 m²
+Habitaciones: 4
+Estacionamientos: 5
+Baños: 2
+Tipo: 4
+
+
+Región: Maule
+------------------------------
+Nombre: Departamento en Rio claro
+Descripción: Un departamento frente al Lago.
+Dirección: Calle Falsa 456
+Precio: 500000
+Superficie construida: 60.0 m²
+Superficie total: 70.0 m²
+Habitaciones: 2
+Estacionamientos: 1
+Baños: 2
+Tipo: 2
+
+
+Región: Metropolitana de Santiago
+------------------------------
+Nombre: Departamento en Santiago
+Descripción: Un departamento acogedor en el centro de Santiago.
+Dirección: Calle Falsa 456
+Precio: 500000
+Superficie construida: 60.0 m²
+Superficie total: 70.0 m²
+Habitaciones: 2
+Estacionamientos: 1
+Baños: 1
+Tipo: 2
+
+
+Región: O'Higgins
+------------------------------
+Nombre: Casa
+Descripción: Casa con gran terreno.
+Dirección: Calle Falsa 456
+Precio: 500000
+Superficie construida: 100.0 m²
+Superficie total: 270.0 m²
+Habitaciones: 2
+Estacionamientos: 4
+Baños: 2
+Tipo: 1
+
+
+Región: Valparaíso
+------------------------------
+Nombre: Casa
+Descripción: Casa.
+Dirección: Calle Falsa 456
+Precio: 500000
+Superficie construida: 60.0 m²
+Superficie total: 70.0 m²
+Habitaciones: 2
+Estacionamientos: 1
+Baños: 2
+Tipo: 1
+

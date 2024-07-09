@@ -1,0 +1,16 @@
+[
+    {
+        "model": "gestion.tipo_usuario",
+        "pk": "Arrendador",
+        "fields": {
+            "nombre": "Arrendador"
+        }
+    },
+    {
+        "model": "gestion.tipo_usuario",
+        "pk": "Arrendatario",
+        "fields": {
+            "nombre": "Arrendatario"
+        }
+    }
+]

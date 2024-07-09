@@ -1,0 +1,154 @@
+[
+    {
+        "model": "gestion.propiedad",
+        "fields": {
+            "nombre": "Departamento en Santiago",
+            "descripcion": "Un departamento acogedor en el centro de Santiago.",
+            "m2_construidos": 60,
+            "m2_totales": 60,
+            "cantidad_estacionamientos": 1,
+            "cantidad_habitaciones": 2,
+            "cantidad_banios": 1,
+            "direccion": "Calle Falsa 456",
+            "precio_mensual": 500000,
+            "comuna": 79,
+            "region": 7,
+            "tipo_propiedad": 2,
+            "arrendador": 1,
+            "arrendada": false
+        }
+    },
+    {
+        "model": "gestion.propiedad",
+        "fields": {
+            "nombre": "Departamento en Villarrica",
+            "descripcion": "Un departamento frente al Lago.",
+            "m2_construidos": 60,
+            "m2_totales": 60,
+            "cantidad_estacionamientos": 1,
+            "cantidad_habitaciones": 2,
+            "cantidad_banios": 2,
+            "direccion": "Calle Falsa 456",
+            "precio_mensual": 500000,
+            "comuna": 182,
+            "region": 11,
+            "tipo_propiedad": 2,
+            "arrendador": 1,
+            "arrendada": false
+        }
+    },
+    {
+        "model": "gestion.propiedad",
+        "fields": {
+            "nombre": "Departamento en Rio claro",
+            "descripcion": "Un departamento frente al Lago.",
+            "m2_construidos": 60,
+            "m2_totales": 60,
+            "cantidad_estacionamientos": 1,
+            "cantidad_habitaciones": 2,
+            "cantidad_banios": 2,
+            "direccion": "Calle Falsa 456",
+            "precio_mensual": 500000,
+            "comuna": 138,
+            "region": 9,
+            "tipo_propiedad": 2,
+            "arrendador": 3,
+            "arrendada": false
+        }
+    },
+    {
+        "model": "gestion.propiedad",
+        "fields": {
+            "nombre": "Departamento ",
+            "descripcion": "Un departamento increible.",
+            "m2_construidos": 60,
+            "m2_totales": 60,
+            "cantidad_estacionamientos": 1,
+            "cantidad_habitaciones": 2,
+            "cantidad_banios": 2,
+            "direccion": "Calle Falsa 456",
+            "precio_mensual": 500000,
+            "comuna": 200,
+            "region": 13,
+            "tipo_propiedad": 2,
+            "arrendador": 5,
+            "arrendada": false
+        }
+    },
+    {
+        "model": "gestion.propiedad",
+        "fields": {
+            "nombre": "Casa",
+            "descripcion": "Casa con gran terreno.",
+            "m2_construidos": 100,
+            "m2_totales": 270,
+            "cantidad_estacionamientos": 4,
+            "cantidad_habitaciones": 2,
+            "cantidad_banios": 2,
+            "direccion": "Calle Falsa 456",
+            "precio_mensual": 500000,
+            "comuna": 115,
+            "region": 8,
+            "tipo_propiedad": 1,
+            "arrendador": 4,
+            "arrendada": false
+        }
+    },
+    {
+        "model": "gestion.propiedad",
+        "fields": {
+            "nombre": "Casa",
+            "descripcion": "Casa.",
+            "m2_construidos": 60,
+            "m2_totales": 70,
+            "cantidad_estacionamientos": 1,
+            "cantidad_habitaciones": 2,
+            "cantidad_banios": 2,
+            "direccion": "Calle Falsa 456",
+            "precio_mensual": 500000,
+            "comuna": 47,
+            "region": 6,
+            "tipo_propiedad": 1,
+            "arrendador": 2,
+            "arrendada": false
+        }
+    },
+    {
+        "model": "gestion.propiedad",
+        "fields": {
+            "nombre": "Casa",
+            "descripcion": "Casa.",
+            "m2_construidos": 60,
+            "m2_totales": 70,
+            "cantidad_estacionamientos": 1,
+            "cantidad_habitaciones": 2,
+            "cantidad_banios": 2,
+            "direccion": "Calle Falsa 456",
+            "precio_mensual": 500000,
+            "comuna": 19,
+            "region": 4,
+            "tipo_propiedad": 1,
+            "arrendador": 4,
+            "arrendada": false
+        }
+    },
+    {
+        "model": "gestion.propiedad",
+        "fields": {
+            "nombre": "Parcela",
+            "descripcion": "Parcela con Casa.",
+            "m2_construidos": 250,
+            "m2_totales": 5000,
+            "cantidad_estacionamientos": 5,
+            "cantidad_habitaciones": 4,
+            "cantidad_banios": 2,
+            "direccion": "Calle Falsa 456",
+            "precio_mensual": 500000,
+            "comuna": 187,
+            "region": 12,
+            "tipo_propiedad": 4,
+            "arrendador": 3,
+            "arrendada": false
+        }
+    }
+]

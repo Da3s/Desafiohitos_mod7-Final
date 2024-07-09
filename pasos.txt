@@ -27,3 +27,29 @@ DATABASES = {
 }
 
 
+###################### Carga de data ##########################
+
+usando el comando
+
+python manage.py loaddata gestion/static/js/nombre_archivo.json
+
+1. Comunas y regiones
+2. Tipo de usuario
+3. Tipo de Inmueble
+4. Carga usuarios
+5. Carga inmuebles
+
+
+#################### Generar informe mediante script #############
+
+Usar el comando python consulta_inmueblesReg.py para ordenar por regiones
+
+                python consulta_inmueblesCom.py para ordenar por comuna
+
+
+
+
+
+#################### Dumpear info para armar un JSON #################
+
+python manage.py dumpdata --indent 2 miapp.region> region.json

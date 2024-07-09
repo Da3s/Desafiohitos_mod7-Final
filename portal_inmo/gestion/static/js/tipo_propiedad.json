@@ -1,0 +1,26 @@
+[
+    {
+        "model": "gestion.tipo_propiedad",
+        "fields": {
+            "nombre": "Casa"
+        }
+    },
+    {
+        "model": "gestion.tipo_propiedad",
+        "fields": {
+            "nombre": "Departamento"
+        }
+    },
+    {
+        "model": "gestion.tipo_propiedad",
+        "fields": {
+            "nombre": "Local Comercial"
+        }
+    },
+    {
+        "model": "gestion.tipo_propiedad",
+        "fields": {
+            "nombre": "Parcela"
+        }
+    }
+]

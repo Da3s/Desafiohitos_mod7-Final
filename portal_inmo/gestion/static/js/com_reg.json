@@ -1,68 +1,1855 @@
-{
-    "regiones": [
-        {
-            "region": "Arica y Parinacota",
-            "comunas": ["Arica", "Camarones", "Putre", "General Lagos"]
-        },
-        {
-            "region": "Tarapacá",
-            "comunas": ["Iquique", "Alto Hospicio", "Pozo Almonte", "Camiña", "Colchane", "Huara", "Pica"]
-        },
-        {
-            "region": "Antofagasta",
-            "comunas": ["Antofagasta", "Mejillones", "Sierra Gorda", "Taltal", "Calama", "Ollagüe", "San Pedro de Atacama", "Tocopilla", "María Elena"]
-        },
-        {
-            "region": "Atacama",
-            "comunas": ["Copiapó", "Caldera", "Tierra Amarilla", "Chañaral", "Diego de Almagro", "Vallenar", "Alto del Carmen", "Freirina", "Huasco"]
-        },
-        {
-            "region": "Coquimbo",
-            "comunas": ["La Serena", "Coquimbo", "Andacollo", "La Higuera", "Paiguano", "Vicuña", "Illapel", "Canela", "Los Vilos", "Salamanca", "Ovalle", "Combarbalá", "Monte Patria", "Punitaqui", "Río Hurtado"]
-        },
-        {
-            "region": "Valparaíso",
-            "comunas": ["Valparaíso", "Casablanca", "Concón", "Juan Fernández", "Puchuncaví", "Quintero", "Viña del Mar", "Isla de Pascua", "Los Andes", "Calle Larga", "Rinconada", "San Esteban", "La Ligua", "Cabildo", "Papudo", "Petorca", "Zapallar", "Quillota", "Calera", "Hijuelas", "La Cruz", "Nogales", "San Antonio", "Algarrobo", "Cartagena", "El Quisco", "El Tabo", "Santo Domingo", "San Felipe", "Catemu", "Llaillay", "Panquehue", "Putaendo", "Santa María", "Quilpué", "Limache", "Olmué", "Villa Alemana"]
-        },
-        {
-            "region": "Región del Libertador Gral. Bernardo O’Higgins",
-            "comunas": ["Rancagua", "Codegua", "Coinco", "Coltauco", "Doñihue", "Graneros", "Las Cabras", "Machalí", "Malloa", "Mostazal", "Olivar", "Peumo", "Pichidegua", "Quinta de Tilcoco", "Rengo", "Requínoa", "San Vicente", "Pichilemu", "La Estrella", "Litueche", "Marchihue", "Navidad", "Paredones", "San Fernando", "Chépica", "Chimbarongo", "Lolol", "Nancagua", "Palmilla", "Peralillo", "Placilla", "Pumanque", "Santa Cruz"]
-        },
-        {
-            "region": "Región del Maule",
-            "comunas": ["Talca", "Constitución", "Curepto", "Empedrado", "Maule", "Pelarco", "Pencahue", "Río Claro", "San Clemente", "San Rafael", "Cauquenes", "Chanco", "Pelluhue", "Curicó", "Hualañé", "Licantén", "Molina", "Rauco", "Romeral", "Sagrada Familia", "Teno", "Vichuquén", "Linares", "Colbún", "Longaví", "Parral", "Retiro", "San Javier", "Villa Alegre", "Yerbas Buenas"]
-        },
-        {
-            "region": "Región de Ñuble",
-            "comunas": ["Cobquecura", "Coelemu", "Ninhue", "Portezuelo", "Quirihue", "Ránquil", "Treguaco", "Bulnes", "Chillán Viejo", "Chillán", "El Carmen", "Pemuco", "Pinto", "Quillón", "San Ignacio", "Yungay", "Coihueco", "Ñiquén", "San Carlos", "San Fabián", "San Nicolás"]
-        },
-        {
-            "region": "Región del Biobío",
-            "comunas": ["Concepción", "Coronel", "Chiguayante", "Florida", "Hualqui", "Lota", "Penco", "San Pedro de la Paz", "Santa Juana", "Talcahuano", "Tomé", "Hualpén", "Lebu", "Arauco", "Cañete", "Contulmo", "Curanilahue", "Los Álamos", "Tirúa", "Los Ángeles", "Antuco", "Cabrero", "Laja", "Mulchén", "Nacimiento", "Negrete", "Quilaco", "Quilleco", "San Rosendo", "Santa Bárbara", "Tucapel", "Yumbel", "Alto Biobío"]
-        },
-        {
-            "region": "Región de la Araucanía",
-            "comunas": ["Temuco", "Carahue", "Cunco", "Curarrehue", "Freire", "Galvarino", "Gorbea", "Lautaro", "Loncoche", "Melipeuco", "Nueva Imperial", "Padre las Casas", "Perquenco", "Pitrufquén", "Pucón", "Saavedra", "Teodoro Schmidt", "Toltén", "Vilcún", "Villarrica", "Cholchol", "Angol", "Collipulli", "Curacautín", "Ercilla", "Lonquimay", "Los Sauces", "Lumaco", "Purén", "Renaico", "Traiguén", "Victoria"]
-        },
-        {
-            "region": "Región de Los Ríos",
-            "comunas": ["Valdivia", "Corral", "Lanco", "Los Lagos", "Máfil", "Mariquina", "Paillaco", "Panguipulli", "La Unión", "Futrono", "Lago Ranco", "Río Bueno"]
-        },
-        {
-            "region": "Región de Los Lagos",
-            "comunas": ["Puerto Montt", "Calbuco", "Cochamó", "Fresia", "Frutillar", "Los Muermos", "Llanquihue", "Maullín", "Puerto Varas", "Castro", "Ancud", "Chonchi", "Curaco de Vélez", "Dalcahue", "Puqueldón", "Queilén", "Quellón", "Quemchi", "Quinchao", "Osorno", "Puerto Octay", "Purranque", "Puyehue", "Río Negro", "San Juan de la Costa", "San Pablo", "Chaitén", "Futaleufú", "Hualaihué", "Palena"]
-        },
-        {
-            "region": "Región Aisén del Gral. Carlos Ibáñez del Campo",
-            "comunas": ["Coihaique", "Lago Verde", "Aisén", "Cisnes", "Guaitecas", "Cochrane", "O’Higgins", "Tortel", "Chile Chico", "Río Ibáñez"]
-        },
-        {
-            "region": "Región de Magallanes y de la Antártica Chilena",
-            "comunas": ["Punta Arenas", "Laguna Blanca", "Río Verde", "San Gregorio", "Cabo de Hornos (Ex Navarino)", "Antártica", "Porvenir", "Primavera", "Timaukel", "Natales", "Torres del Paine"]
-        },
-        {
-            "region": "Región Metropolitana de Santiago",
-            "comunas": ["Cerrillos", "Cerro Navia", "Conchalí", "El Bosque", "Estación Central", "Huechuraba", "Independencia", "La Cisterna", "La Florida", "La Granja", "La Pintana", "La Reina", "Las Condes", "Lo Barnechea", "Lo Espejo", "Lo Prado", "Macul", "Maipú", "Ñuñoa", "Pedro Aguirre Cerda", "Peñalolén", "Providencia", "Pudahuel", "Quilicura", "Quinta Normal", "Recoleta", "Renca", "Santiago", "San Joaquín", "San Miguel", "San Ramón", "Vitacura", "Puente Alto", "Pirque", "San José de Maipo", "Colina", "Lampa", "Tiltil", "San Bernardo", "Buin", "Calera de Tango", "Paine", "Melipilla", "Alhué", "Curacaví", "María Pinto", "San Pedro", "Talagante", "El Monte", "Isla de Maipo", "Padre Hurtado", "Peñaflor"]
-         }
-    ]
-}
+[
+    {
+        "model": "gestion.region",
+        "fields": {
+            "nombre": "XV - Arica y Parinacota"
+        }
+    },
+    {
+        "model": "gestion.region",
+        "fields": {
+            "nombre": "I - Tarapacá"
+        }
+    },
+    {
+        "model": "gestion.region",
+        "fields": {
+            "nombre": "II - Antofagasta"
+        }
+    },
+    {
+        "model": "gestion.region",
+        "fields": {
+            "nombre": "III - Atacama"
+        }
+    },
+    {
+        "model": "gestion.region",
+        "fields": {
+            "nombre": "IV - Coquimbo"
+        }
+    },
+    {
+        "model": "gestion.region",
+        "fields": {
+            "nombre": "V - Valparaíso"
+        }
+    },
+    {
+        "model": "gestion.region",
+        "fields": {
+            "nombre": "XIII - Metropolitana de Santiago"
+        }
+    },
+    {
+        "model": "gestion.region",
+        "fields": {
+            "nombre": "VI - O'Higgins"
+        }
+    },
+    {
+        "model": "gestion.region",
+        "fields": {
+            "nombre": "VII - Maule"
+        }
+    },
+    {
+        "model": "gestion.region",
+        "fields": {
+            "nombre": "VIII - Biobío"
+        }
+    },
+    {
+        "model": "gestion.region",
+        "fields": {
+            "nombre": "IX - Araucanía"
+        }
+    },
+    {
+        "model": "gestion.region",
+        "fields": {
+            "nombre": "XIV - Los Ríos"
+        }
+    },
+    {
+        "model": "gestion.region",
+        "fields": {
+            "nombre": "X - Los Lagos"
+        }
+    },
+    {
+        "model": "gestion.region",
+        "fields": {
+            "nombre": "XI - Aisén del General Carlos Ibáñez del Campo"
+        }
+    },
+    {
+        "model": "gestion.region",
+        "fields": {
+            "nombre": "XII - Magallanes y de la Antártica Chilena"
+        }
+    },
+    {
+        "model": "gestion.region",
+        "fields": {
+            "nombre": "XVI - Ñuble"
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Arica",
+            "region": 1
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Camarones",
+            "region": 1
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Putre",
+            "region": 1
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "General Lagos",
+            "region": 1
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Iquique",
+            "region": 2
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Alto Hospicio",
+            "region": 2
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Pozo Almonte",
+            "region": 2
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Camiña",
+            "region": 2
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Colchane",
+            "region": 2
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Huara",
+            "region": 2
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Pica",
+            "region": 2
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Antofagasta",
+            "region": 3
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Mejillones",
+            "region": 3
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Sierra Gorda",
+            "region": 3
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Taltal",
+            "region": 3
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Calama",
+            "region": 3
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Ollagüe",
+            "region": 3
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "San Pedro de Atacama",
+            "region": 3
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Copiapó",
+            "region": 4
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Caldera",
+            "region": 4
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Tierra Amarilla",
+            "region": 4
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Chañaral",
+            "region": 4
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Diego de Almagro",
+            "region": 4
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Vallenar",
+            "region": 4
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Alto del Carmen",
+            "region": 4
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Freirina",
+            "region": 4
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Huasco",
+            "region": 4
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "La Serena",
+            "region": 5
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Coquimbo",
+            "region": 5
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Andacollo",
+            "region": 5
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "La Higuera",
+            "region": 5
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Paiguano",
+            "region": 5
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Vicuña",
+            "region": 5
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Illapel",
+            "region": 5
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Canela",
+            "region": 5
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Los Vilos",
+            "region": 5
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Salamanca",
+            "region": 5
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Ovalle",
+            "region": 5
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Combarbalá",
+            "region": 5
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Monte Patria",
+            "region": 5
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Punitaqui",
+            "region": 5
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Río Hurtado",
+            "region": 5
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Valparaíso",
+            "region": 6
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Casablanca",
+            "region": 6
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Concón",
+            "region": 6
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Juan Fernández",
+            "region": 6
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Puchuncaví",
+            "region": 6
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Quilpué",
+            "region": 6
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Quintero",
+            "region": 6
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Villa Alemana",
+            "region": 6
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Viña del Mar",
+            "region": 6
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Isla de Pascua",
+            "region": 6
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Los Andes",
+            "region": 6
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Calle Larga",
+            "region": 6
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Rinconada",
+            "region": 6
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "San Esteban",
+            "region": 6
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "La Ligua",
+            "region": 6
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Cabildo",
+            "region": 6
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Papudo",
+            "region": 6
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Petorca",
+            "region": 6
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Zapallar",
+            "region": 6
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Quillota",
+            "region": 6
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "La Calera",
+            "region": 6
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Hijuelas",
+            "region": 6
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "La Cruz",
+            "region": 6
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Nogales",
+            "region": 6
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "San Antonio",
+            "region": 6
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Algarrobo",
+            "region": 6
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Cartagena",
+            "region": 6
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "El Quisco",
+            "region": 6
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "El Tabo",
+            "region": 6
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Santo Domingo",
+            "region": 6
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "San Felipe",
+            "region": 6
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Catemu",
+            "region": 6
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Llaillay",
+            "region": 6
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Panquehue",
+            "region": 6
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Putaendo",
+            "region": 6
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Santa María",
+            "region": 6
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Santiago",
+            "region": 7
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Cerrillos",
+            "region": 7
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Cerro Navia",
+            "region": 7
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Conchalí",
+            "region": 7
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "El Bosque",
+            "region": 7
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Estación Central",
+            "region": 7
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Huechuraba",
+            "region": 7
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Independencia",
+            "region": 7
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "La Cisterna",
+            "region": 7
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "La Florida",
+            "region": 7
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "La Granja",
+            "region": 7
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "La Pintana",
+            "region": 7
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "La Reina",
+            "region": 7
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Las Condes",
+            "region": 7
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Lo Barnechea",
+            "region": 7
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Lo Espejo",
+            "region": 7
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Lo Prado",
+            "region": 7
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Macul",
+            "region": 7
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Maipú",
+            "region": 7
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Ñuñoa",
+            "region": 7
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Pedro Aguirre Cerda",
+            "region": 7
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Peñalolén",
+            "region": 7
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Providencia",
+            "region": 7
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Pudahuel",
+            "region": 7
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Quilicura",
+            "region": 7
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Quinta Normal",
+            "region": 7
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Recoleta",
+            "region": 7
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Renca",
+            "region": 7
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "San Joaquín",
+            "region": 7
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "San Miguel",
+            "region": 7
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "San Ramón",
+            "region": 7
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Vitacura",
+            "region": 7
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Puente Alto",
+            "region": 7
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Pirque",
+            "region": 7
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "San José de Maipo",
+            "region": 7
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Rancagua",
+            "region": 8
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Codegua",
+            "region": 8
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Coinco",
+            "region": 8
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Coltauco",
+            "region": 8
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Doñihue",
+            "region": 8
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Graneros",
+            "region": 8
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Las Cabras",
+            "region": 8
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Machalí",
+            "region": 8
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Malloa",
+            "region": 8
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Mostazal",
+            "region": 8
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Olivar",
+            "region": 8
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Peumo",
+            "region": 8
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Pichidegua",
+            "region": 8
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Quinta de Tilcoco",
+            "region": 8
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Rengo",
+            "region": 8
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Requínoa",
+            "region": 8
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "San Vicente",
+            "region": 8
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Talca",
+            "region": 9
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Constitución",
+            "region": 9
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Curepto",
+            "region": 9
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Empedrado",
+            "region": 9
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Maule",
+            "region": 9
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Pelarco",
+            "region": 9
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Pencahue",
+            "region": 9
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Río Claro",
+            "region": 9
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "San Clemente",
+            "region": 9
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "San Rafael",
+            "region": 9
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Cauquenes",
+            "region": 9
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Chanco",
+            "region": 9
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Pelluhue",
+            "region": 9
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Concepción",
+            "region": 10
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Coronel",
+            "region": 10
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Chiguayante",
+            "region": 10
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Florida",
+            "region": 10
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Hualqui",
+            "region": 10
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Lota",
+            "region": 10
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Penco",
+            "region": 10
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "San Pedro de la Paz",
+            "region": 10
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Santa Juana",
+            "region": 10
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Talcahuano",
+            "region": 10
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Tomé",
+            "region": 10
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Hualpén",
+            "region": 10
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Lebu",
+            "region": 10
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Arauco",
+            "region": 10
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Cañete",
+            "region": 10
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Contulmo",
+            "region": 10
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Curanilahue",
+            "region": 10
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Los Álamos",
+            "region": 10
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Tirúa",
+            "region": 10
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Temuco",
+            "region": 11
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Carahue",
+            "region": 11
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Cunco",
+            "region": 11
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Curarrehue",
+            "region": 11
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Freire",
+            "region": 11
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Galvarino",
+            "region": 11
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Gorbea",
+            "region": 11
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Lautaro",
+            "region": 11
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Loncoche",
+            "region": 11
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Melipeuco",
+            "region": 11
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Nueva Imperial",
+            "region": 11
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Padre las Casas",
+            "region": 11
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Perquenco",
+            "region": 11
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Pitrufquén",
+            "region": 11
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Pucón",
+            "region": 11
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Saavedra",
+            "region": 11
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Teodoro Schmidt",
+            "region": 11
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Toltén",
+            "region": 11
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Vilcún",
+            "region": 11
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Villarrica",
+            "region": 11
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Cholchol",
+            "region": 11
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Valdivia",
+            "region": 12
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Corral",
+            "region": 12
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Lanco",
+            "region": 12
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Los Lagos",
+            "region": 12
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Máfil",
+            "region": 12
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Mariquina",
+            "region": 12
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Paillaco",
+            "region": 12
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Panguipulli",
+            "region": 12
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Puerto Montt",
+            "region": 13
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Calbuco",
+            "region": 13
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Cochamó",
+            "region": 13
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Fresia",
+            "region": 13
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Frutillar",
+            "region": 13
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Los Muermos",
+            "region": 13
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Llanquihue",
+            "region": 13
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Maullín",
+            "region": 13
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Puerto Varas",
+            "region": 13
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Ancud",
+            "region": 13
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Castro",
+            "region": 13
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Chaitén",
+            "region": 13
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Chonchi",
+            "region": 13
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Curaco de Vélez",
+            "region": 13
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Dalcahue",
+            "region": 13
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Futaleufú",
+            "region": 13
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Hualaihué",
+            "region": 13
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Palena",
+            "region": 13
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Coihaique",
+            "region": 14
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Lago Verde",
+            "region": 14
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Aysén",
+            "region": 14
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Cisnes",
+            "region": 14
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Guaitecas",
+            "region": 14
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Cochrane",
+            "region": 14
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "O'Higgins",
+            "region": 14
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Tortel",
+            "region": 14
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Chile Chico",
+            "region": 14
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Río Ibáñez",
+            "region": 14
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Punta Arenas",
+            "region": 15
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Laguna Blanca",
+            "region": 15
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Río Verde",
+            "region": 15
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "San Gregorio",
+            "region": 15
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Cabo de Hornos",
+            "region": 15
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Antártica",
+            "region": 15
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Porvenir",
+            "region": 15
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Primavera",
+            "region": 15
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Timaukel",
+            "region": 15
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Natales",
+            "region": 15
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Torres del Paine",
+            "region": 15
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Cobquecura",
+            "region": 16
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Coelemu",
+            "region": 16
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Ninhue",
+            "region": 16
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Portezuelo",
+            "region": 16
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Quirihue",
+            "region": 16
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Ránquil",
+            "region": 16
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Treguaco",
+            "region": 16
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Bulnes",
+            "region": 16
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Chillan Viejo",
+            "region": 16
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Chillan",
+            "region": 16
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "El Carmen",
+            "region": 16
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Pemuco",
+            "region": 16
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Pinto",
+            "region": 16
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Quillón",
+            "region": 16
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "San Ignacio",
+            "region": 16
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Yungay",
+            "region": 16
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Coihueco",
+            "region": 16
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "Ñiquén",
+            "region": 16
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "San Carlos",
+            "region": 16
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "San Fabián",
+            "region": 16
+        }
+    },
+    {
+        "model": "gestion.comuna",
+        "fields": {
+            "nombre": "San Nicolás",
+            "region": 16
+        }
+    }
+]

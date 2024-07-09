@@ -1,0 +1,272 @@
+[
+    {
+        "model": "auth.user",
+        "fields": {
+            "username": "usuario1",
+            "password": "pbkdf2_sha256$260000$5rUkj3VdN2O9$5HjI+xZ6Z5/hjI+xZ6Z==",
+            "email": "usuario1@da3s.com",
+            "first_name": "Nombre1",
+            "last_name": "Apellido1",
+            "is_active": true,
+            "is_superuser": false,
+            "is_staff": false,
+            "date_joined": "2024-07-08T00:00:00Z"
+        }
+    },
+    {
+        "model": "auth.user",
+        "fields": {
+            "username": "usuario2",
+            "password": "pbkdf2_sha256$260000$5rUkj3VdN2O9$5HjI+xZ6Z5/hjI+xZ6Z==",
+            "email": "usuario2@da3s.com",
+            "first_name": "Nombre2",
+            "last_name": "Apellido2",
+            "is_active": true,
+            "is_superuser": false,
+            "is_staff": false,
+            "date_joined": "2023-01-02T00:00:00Z"
+        }
+    },
+    {
+        "model": "auth.user",
+        "fields": {
+            "username": "usuario3",
+            "password": "pbkdf2_sha256$260000$5rUkj3VdN2O9$5HjI+xZ6Z5/hjI+xZ6Z==",
+            "email": "usuario3@da3s.com",
+            "first_name": "Nombre3",
+            "last_name": "Apellido3",
+            "is_active": true,
+            "is_superuser": false,
+            "is_staff": false,
+            "date_joined": "2023-01-02T00:00:00Z"
+        }
+    },
+    {
+        "model": "auth.user",
+        "fields": {
+            "username": "usuario4",
+            "password": "pbkdf2_sha256$260000$5rUkj3VdN2O9$5HjI+xZ6Z5/hjI+xZ6Z==",
+            "email": "usuario4@da3s.com",
+            "first_name": "Nombre4",
+            "last_name": "Apellido4",
+            "is_active": true,
+            "is_superuser": false,
+            "is_staff": false,
+            "date_joined": "2023-01-02T00:00:00Z"
+        }
+    },
+    {
+        "model": "auth.user",
+        "fields": {
+            "username": "usuario5",
+            "password": "pbkdf2_sha256$260000$5rUkj3VdN2O9$5HjI+xZ6Z5/hjI+xZ6Z==",
+            "email": "usuario5@da3s.com",
+            "first_name": "Nombre5",
+            "last_name": "Apellido5",
+            "is_active": true,
+            "is_superuser": false,
+            "is_staff": false,
+            "date_joined": "2023-01-02T00:00:00Z"
+        }
+    },
+    {
+        "model": "auth.user",
+        "fields": {
+            "username": "usuario6",
+            "password": "pbkdf2_sha256$260000$5rUkj3VdN2O9$5HjI+xZ6Z5/hjI+xZ6Z==",
+            "email": "usuario6@da3s.com",
+            "first_name": "Nombre6",
+            "last_name": "Apellido6",
+            "is_active": true,
+            "is_superuser": false,
+            "is_staff": false,
+            "date_joined": "2023-01-02T00:00:00Z"
+        }
+    },
+    {
+        "model": "auth.user",
+        "fields": {
+            "username": "usuario7",
+            "password": "pbkdf2_sha256$260000$5rUkj3VdN2O9$5HjI+xZ6Z5/hjI+xZ6Z==",
+            "email": "usuario7@da3s.com",
+            "first_name": "Nombre7",
+            "last_name": "Apellido7",
+            "is_active": true,
+            "is_superuser": false,
+            "is_staff": false,
+            "date_joined": "2023-01-02T00:00:00Z"
+        }
+    },
+    {
+        "model": "auth.user",
+        "fields": {
+            "username": "usuario8",
+            "password": "pbkdf2_sha256$260000$5rUkj3VdN2O9$5HjI+xZ6Z5/hjI+xZ6Z==",
+            "email": "usuario8@da3s.com",
+            "first_name": "Nombre8",
+            "last_name": "Apellido8",
+            "is_active": true,
+            "is_superuser": false,
+            "is_staff": false,
+            "date_joined": "2023-01-02T00:00:00Z"
+        }
+    },
+    {
+        "model": "auth.user",
+        "fields": {
+            "username": "usuario9",
+            "password": "pbkdf2_sha256$260000$5rUkj3VdN2O9$5HjI+xZ6Z5/hjI+xZ6Z==",
+            "email": "usuario9@da3s.com",
+            "first_name": "Nombre9",
+            "last_name": "Apellido9",
+            "is_active": true,
+            "is_superuser": false,
+            "is_staff": false,
+            "date_joined": "2023-01-02T00:00:00Z"
+        }
+    },
+    {
+        "model": "auth.user",
+        "fields": {
+            "username": "usuario10",
+            "password": "pbkdf2_sha256$260000$5rUkj3VdN2O9$5HjI+xZ6Z5/hjI+xZ6Z==",
+            "email": "usuario10@da3s.com",
+            "first_name": "Nombre10",
+            "last_name": "Apellido10",
+            "is_active": true,
+            "is_superuser": false,
+            "is_staff": false,
+            "date_joined": "2023-01-02T00:00:00Z"
+        }
+    },
+    {
+        "model": "gestion.usuario",
+        "fields": {
+            "user": 1,
+            "rut": "123456789",
+            "nombre": "Nombre1",
+            "apellidos": "Apellido1",
+            "direccion": "Direccion1",
+            "telefono": "123456789",
+            "correo_electronico": "usuario1@da3s.com",
+            "tipo_usuario": "Arrendador"
+        }
+    },
+    {
+        "model": "gestion.usuario",
+        "fields": {
+            "user": 2,
+            "rut": "123456789",
+            "nombre": "Nombre2",
+            "apellidos": "Apellido2",
+            "direccion": "Direccion2",
+            "telefono": "123456789",
+            "correo_electronico": "usuario2@da3s.com",
+            "tipo_usuario": "Arrendador"
+        }
+    },
+    {
+        "model": "gestion.usuario",
+        "fields": {
+            "user": 3,
+            "rut": "123456789",
+            "nombre": "Nombre3",
+            "apellidos": "Apellido3",
+            "direccion": "Direccion3",
+            "telefono": "123456789",
+            "correo_electronico": "usuario3@da3s.com",
+            "tipo_usuario": "Arrendador"
+        }
+    },
+    {
+        "model": "gestion.usuario",
+        "fields": {
+            "user": 4,
+            "rut": "123456789",
+            "nombre": "Nombre4",
+            "apellidos": "Apellido4",
+            "direccion": "Direccion4",
+            "telefono": "123456789",
+            "correo_electronico": "usuario4@da3s.com",
+            "tipo_usuario": "Arrendador"
+        }
+    },
+    {
+        "model": "gestion.usuario",
+        "fields": {
+            "user": 5,
+            "rut": "123456789",
+            "nombre": "Nombre5",
+            "apellidos": "Apellido5",
+            "direccion": "Direccion5",
+            "telefono": "123456789",
+            "correo_electronico": "usuario5@da3s.com",
+            "tipo_usuario": "Arrendador"
+        }
+    },
+    {
+        "model": "gestion.usuario",
+        "fields": {
+            "user": 6,
+            "rut": "123456789",
+            "nombre": "Nombre6",
+            "apellidos": "Apellido6",
+            "direccion": "Direccion6",
+            "telefono": "123456789",
+            "correo_electronico": "usuario6@da3s.com",
+            "tipo_usuario": "Arrendatario"
+        }
+    },
+    {
+        "model": "gestion.usuario",
+        "fields": {
+            "user": 7,
+            "rut": "123456789",
+            "nombre": "Nombre7",
+            "apellidos": "Apellido7",
+            "direccion": "Direccion7",
+            "telefono": "123456789",
+            "correo_electronico": "usuario7@da3s.com",
+            "tipo_usuario": "Arrendatario"
+        }
+    },
+    {
+        "model": "gestion.usuario",
+        "fields": {
+            "user": 8,
+            "rut": "123456789",
+            "nombre": "Nombre8",
+            "apellidos": "Apellido8",
+            "direccion": "Direccion8",
+            "telefono": "123456789",
+            "correo_electronico": "usuario8@da3s.com",
+            "tipo_usuario": "Arrendatario"
+        }
+    },
+    {
+        "model": "gestion.usuario",
+        "fields": {
+            "user": 9,
+            "rut": "123456789",
+            "nombre": "Nombre9",
+            "apellidos": "Apellido9",
+            "direccion": "Direccion9",
+            "telefono": "123456789",
+            "correo_electronico": "usuario9@da3s.com",
+            "tipo_usuario": "Arrendatario"
+        }
+    },
+    {
+        "model": "gestion.usuario",
+        "fields": {
+            "user": 10,
+            "rut": "123456789",
+            "nombre": "Nombre10",
+            "apellidos": "Apellido10",
+            "direccion": "Direccion10",
+            "telefono": "123456789",
+            "correo_electronico": "usuario10@da3s.com",
+            "tipo_usuario": "Arrendatario"
+        }
+    }
+]
