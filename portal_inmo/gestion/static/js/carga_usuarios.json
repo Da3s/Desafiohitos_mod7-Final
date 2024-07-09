@@ -3,7 +3,7 @@
         "model": "auth.user",
         "fields": {
             "username": "usuario1",
-            "password": "pbkdf2_sha256$260000$5rUkj3VdN2O9$5HjI+xZ6Z5/hjI+xZ6Z==",
+            "password": "pbkdf2_sha256$720000$szkp8lLShITNmaPZCnRNSG$vWpB479vkI3clhU0UqZt4OFneQ9QkEUOiJPjn1qSTn8=",
             "email": "usuario1@da3s.com",
             "first_name": "Nombre1",
             "last_name": "Apellido1",
@@ -17,7 +17,7 @@
         "model": "auth.user",
         "fields": {
             "username": "usuario2",
-            "password": "pbkdf2_sha256$260000$5rUkj3VdN2O9$5HjI+xZ6Z5/hjI+xZ6Z==",
+            "password": "pbkdf2_sha256$720000$szkp8lLShITNmaPZCnRNSG$vWpB479vkI3clhU0UqZt4OFneQ9QkEUOiJPjn1qSTn8=",
             "email": "usuario2@da3s.com",
             "first_name": "Nombre2",
             "last_name": "Apellido2",
@@ -31,7 +31,7 @@
         "model": "auth.user",
         "fields": {
             "username": "usuario3",
-            "password": "pbkdf2_sha256$260000$5rUkj3VdN2O9$5HjI+xZ6Z5/hjI+xZ6Z==",
+            "password": "pbkdf2_sha256$720000$szkp8lLShITNmaPZCnRNSG$vWpB479vkI3clhU0UqZt4OFneQ9QkEUOiJPjn1qSTn8=",
             "email": "usuario3@da3s.com",
             "first_name": "Nombre3",
             "last_name": "Apellido3",
@@ -45,7 +45,7 @@
         "model": "auth.user",
         "fields": {
             "username": "usuario4",
-            "password": "pbkdf2_sha256$260000$5rUkj3VdN2O9$5HjI+xZ6Z5/hjI+xZ6Z==",
+            "password": "pbkdf2_sha256$720000$szkp8lLShITNmaPZCnRNSG$vWpB479vkI3clhU0UqZt4OFneQ9QkEUOiJPjn1qSTn8=",
             "email": "usuario4@da3s.com",
             "first_name": "Nombre4",
             "last_name": "Apellido4",
@@ -59,7 +59,7 @@
         "model": "auth.user",
         "fields": {
             "username": "usuario5",
-            "password": "pbkdf2_sha256$260000$5rUkj3VdN2O9$5HjI+xZ6Z5/hjI+xZ6Z==",
+            "password": "pbkdf2_sha256$720000$szkp8lLShITNmaPZCnRNSG$vWpB479vkI3clhU0UqZt4OFneQ9QkEUOiJPjn1qSTn8=",
             "email": "usuario5@da3s.com",
             "first_name": "Nombre5",
             "last_name": "Apellido5",
@@ -73,7 +73,7 @@
         "model": "auth.user",
         "fields": {
             "username": "usuario6",
-            "password": "pbkdf2_sha256$260000$5rUkj3VdN2O9$5HjI+xZ6Z5/hjI+xZ6Z==",
+            "password": "pbkdf2_sha256$720000$szkp8lLShITNmaPZCnRNSG$vWpB479vkI3clhU0UqZt4OFneQ9QkEUOiJPjn1qSTn8=",
             "email": "usuario6@da3s.com",
             "first_name": "Nombre6",
             "last_name": "Apellido6",
@@ -87,7 +87,7 @@
         "model": "auth.user",
         "fields": {
             "username": "usuario7",
-            "password": "pbkdf2_sha256$260000$5rUkj3VdN2O9$5HjI+xZ6Z5/hjI+xZ6Z==",
+            "password": "pbkdf2_sha256$720000$szkp8lLShITNmaPZCnRNSG$vWpB479vkI3clhU0UqZt4OFneQ9QkEUOiJPjn1qSTn8=",
             "email": "usuario7@da3s.com",
             "first_name": "Nombre7",
             "last_name": "Apellido7",
@@ -101,7 +101,7 @@
         "model": "auth.user",
         "fields": {
             "username": "usuario8",
-            "password": "pbkdf2_sha256$260000$5rUkj3VdN2O9$5HjI+xZ6Z5/hjI+xZ6Z==",
+            "password": "pbkdf2_sha256$720000$szkp8lLShITNmaPZCnRNSG$vWpB479vkI3clhU0UqZt4OFneQ9QkEUOiJPjn1qSTn8=",
             "email": "usuario8@da3s.com",
             "first_name": "Nombre8",
             "last_name": "Apellido8",
@@ -115,7 +115,7 @@
         "model": "auth.user",
         "fields": {
             "username": "usuario9",
-            "password": "pbkdf2_sha256$260000$5rUkj3VdN2O9$5HjI+xZ6Z5/hjI+xZ6Z==",
+            "password": "pbkdf2_sha256$720000$szkp8lLShITNmaPZCnRNSG$vWpB479vkI3clhU0UqZt4OFneQ9QkEUOiJPjn1qSTn8=",
             "email": "usuario9@da3s.com",
             "first_name": "Nombre9",
             "last_name": "Apellido9",
@@ -129,7 +129,7 @@
         "model": "auth.user",
         "fields": {
             "username": "usuario10",
-            "password": "pbkdf2_sha256$260000$5rUkj3VdN2O9$5HjI+xZ6Z5/hjI+xZ6Z==",
+            "password": "pbkdf2_sha256$720000$szkp8lLShITNmaPZCnRNSG$vWpB479vkI3clhU0UqZt4OFneQ9QkEUOiJPjn1qSTn8=",
             "email": "usuario10@da3s.com",
             "first_name": "Nombre10",
             "last_name": "Apellido10",
