@@ -72,39 +72,30 @@ def actualizar_usuario(request):
     if request.method == 'POST':
         username = request.POST['username']
         email = request.POST['email']
-        rut = request.POST['rut']
         nombre = request.POST['nombre']
         apellidos = request.POST['apellidos']
         direccion = request.POST['direccion']
         telefono = request.POST['telefono']
-        tipo_usuario_nombre = request.POST['tipo_usuario']
-
-        try:
-            tipo_usuario = Tipo_usuario.objects.get(nombre=tipo_usuario_nombre)
-        except Tipo_usuario.DoesNotExist:
-            messages.error(request, 'El tipo de usuario no existe.')
-            return redirect('actualizar_usuario')
 
         user = request.user
         user.username = username
         user.email = email
         user.save()
 
-        usuario.rut = rut
         usuario.nombre = nombre
         usuario.apellidos = apellidos
         usuario.direccion = direccion
         usuario.telefono = telefono
         usuario.correo_electronico = email
-        usuario.tipo_usuario = tipo_usuario
         usuario.save()
 
         messages.success(request, 'Los datos se actualizaron correctamente.')
-        return redirect('indice') 
+        return redirect('indice')
 
     context = {
         'usuario': usuario,
-        'tipos_usuario': Tipo_usuario.objects.all()
+        'nombre_usuario': request.user.username,
+        'tipo_usuario': usuario.tipo_usuario.nombre,
     }
     return render(request, 'actualizar_usuario.html', context)
 

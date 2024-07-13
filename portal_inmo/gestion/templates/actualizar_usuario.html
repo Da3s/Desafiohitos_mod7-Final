@@ -3,14 +3,11 @@
 {% block content %}
 
 <div class="container mt-5">
-    <h2 class="mb-4">Actualiza tus datos</h2>
     <form method="post" class="needs-validation" novalidate>
         {% csrf_token %}
         
-        <div class="form-group">
-            <label for="username">Nombre de usuario:</label>
-            <input type="text" name="username" class="form-control" value="{{ usuario.user.username }}" required>
-            <div class="invalid-feedback">Este campo es requerido.</div>
+        <div>
+            <h1>Bienvenido {{ nombre_usuario }}, aquí puedes modificar tus datos</h1>
         </div>
         
         <div class="form-group">
@@ -18,13 +15,7 @@
             <input type="email" name="email" class="form-control" value="{{ usuario.user.email }}" required>
             <div class="invalid-feedback">Este campo es requerido.</div>
         </div>
-        
-        <div class="form-group">
-            <label for="rut">RUT:</label>
-            <input type="text" name="rut" class="form-control" value="{{ usuario.rut }}" required>
-            <div class="invalid-feedback">Este campo es requerido.</div>
-        </div>
-        
+           
         <div class="form-group">
             <label for="nombre">Nombre:</label>
             <input type="text" name="nombre" class="form-control" value="{{ usuario.nombre }}" required>
@@ -49,18 +40,15 @@
             <div class="invalid-feedback">Este campo es requerido.</div>
         </div>
         
-        <div class="form-group">
-            <label for="tipo_usuario">Tipo de Usuario:</label>
-            <select name="tipo_usuario" class="form-control" required>
-                {% for tipo in tipos_usuario %}
-                    <option value="{{ tipo.nombre }}" {% if tipo.nombre == usuario.tipo_usuario.nombre %}selected{% endif %}>{{ tipo.nombre }}</option>
-                {% endfor %}
-            </select>
-            <div class="invalid-feedback">Este campo es requerido.</div>
-        </div>
-        
         <button type="submit" class="btn btn-primary mt-3 mb-3">Actualizar Datos</button>
+
+        <div>
+            <h3>Tu usuario es de tipo {{ tipo_usuario }}</h3>
+        </div>
+
     </form>
+
+
     
     {% if messages %}
         <div class="mt-3">
