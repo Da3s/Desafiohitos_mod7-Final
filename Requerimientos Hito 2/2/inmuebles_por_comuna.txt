@@ -1,0 +1,48 @@
+
+Comuna: Codegua
+------------------------------
+Nombre: Casa
+Descripción: Casa con gran terreno.
+
+
+Comuna: Copiapó
+------------------------------
+Nombre: Casa
+Descripción: Casa.
+
+
+Comuna: Los Lagos
+------------------------------
+Nombre: Parcela
+Descripción: Parcela con Casa.
+
+
+Comuna: Puchuncaví
+------------------------------
+Nombre: Casa
+Descripción: Casa.
+
+
+Comuna: Puerto Varas
+------------------------------
+Nombre: Departamento 
+Descripción: Un departamento increible.
+
+
+Comuna: Río Claro
+------------------------------
+Nombre: Departamento en Rio claro
+Descripción: Un departamento frente al Lago.
+
+
+Comuna: Santiago
+------------------------------
+Nombre: Departamento en Santiago
+Descripción: Un departamento acogedor en el centro de Santiago.
+
+
+Comuna: Villarrica
+------------------------------
+Nombre: Departamento en Villarrica
+Descripción: Un departamento frente al Lago.
+
