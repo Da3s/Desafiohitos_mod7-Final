@@ -5,7 +5,8 @@
 <div class="container mt-4">
     <div class="card">
         <div class="card-body">
-            <h1 class="card-title">{{ propiedad.nombre }}</h1>
+
+            <h2 class="card-title">Nombre propiedad: {{ propiedad.nombre }}</h2>
             <p class="card-text"><strong>Descripción:</strong> {{ propiedad.descripcion }}</p>
             <p class="card-text"><strong>Metros cuadrados construidos:</strong> {{ propiedad.m2_construidos }}</p>
             <p class="card-text"><strong>Metros cuadrados totales:</strong> {{ propiedad.m2_totales }}</p>
@@ -14,11 +15,9 @@
             <p class="card-text"><strong>Baños:</strong> {{ propiedad.cantidad_banios }}</p>
             <p class="card-text"><strong>Dirección:</strong> {{ propiedad.direccion }}</p>
             <p class="card-text"><strong>Precio Mensual:</strong> {{ propiedad.precio_mensual }}</p>
-            <p class="card-text"><strong>Arrendador:</strong> {{ propiedad.arrendador.user.username }}</p>
-            <!-- Añadir más detalles según necesidades -->
-
-            <!-- Botón para regresar al índice -->
-            <a href="{% url 'dashboard_propiedades' %}" class="btn btn-primary">Volver atras</a>
+            <p class="card-text"><strong>Arrendada:</strong> {{ propiedad.arrendada }}</p>
+            <!-- Para volver al dash -->
+            <a href="{% url 'dashboard_propiedades' %}" class="btn btn-primary">Ir al Dashboard</a>
         </div>
     </div>
 </div>

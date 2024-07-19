@@ -70,17 +70,11 @@ def actualizar_usuario(request):
         return redirect('indice')
 
     if request.method == 'POST':
-        username = request.POST['username']
         email = request.POST['email']
         nombre = request.POST['nombre']
         apellidos = request.POST['apellidos']
         direccion = request.POST['direccion']
         telefono = request.POST['telefono']
-
-        user = request.user
-        user.username = username
-        user.email = email
-        user.save()
 
         usuario.nombre = nombre
         usuario.apellidos = apellidos
@@ -90,7 +84,7 @@ def actualizar_usuario(request):
         usuario.save()
 
         messages.success(request, 'Los datos se actualizaron correctamente.')
-        return redirect('indice')
+
 
     context = {
         'usuario': usuario,
@@ -185,7 +179,7 @@ def publicar_propiedad(request):
     if request.method == 'POST':
         form = PropiedadForm(request.POST)
         if form.is_valid():
-            nueva_propiedad = form.save
+            nueva_propiedad = form.save(commit=False)
             nueva_propiedad.arrendador = request.user
             nueva_propiedad.save()
             return redirect('detalle_propiedad', pk=nueva_propiedad.pk)
