@@ -181,6 +181,7 @@ def publicar_propiedad(request):
     region_seleccionada = request.POST.get('region') if request.method == 'POST' else request.GET.get('region')
     comunas = Comuna.objects.filter(region_id=region_seleccionada) if region_seleccionada else Comuna.objects.none()
 
+
     if request.method == 'POST':
         form = PropiedadForm(request.POST)
         if form.is_valid():
