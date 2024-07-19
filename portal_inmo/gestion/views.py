@@ -177,22 +177,30 @@ def is_arrendador(user):
 @login_required
 @user_passes_test(is_arrendador)
 def publicar_propiedad(request):
+    regiones = Region.objects.all()
+    region_seleccionada = request.POST.get('region') if request.method == 'POST' else request.GET.get('region')
+    comunas = Comuna.objects.filter(region_id=region_seleccionada) if region_seleccionada else Comuna.objects.none()
+
     if request.method == 'POST':
         form = PropiedadForm(request.POST)
         if form.is_valid():
-            nueva_propiedad = form.save(commit=False)
-            arrendador_actual = request.user
-            nueva_propiedad.arrendador = arrendador_actual
+            nueva_propiedad = form.save
+            nueva_propiedad.arrendador = request.user
             nueva_propiedad.save()
             return redirect('detalle_propiedad', pk=nueva_propiedad.pk)
     else:
-        form = PropiedadForm()   
-            
-    regiones = Region.objects.all()  
-    comunas = Comuna.objects.all()  
-    tipos_propiedad = Tipo_propiedad.objects.all()  
-    context = {'form': form}
-    return render(request, 'publicar_propiedad.html', {'form': form, 'regiones': regiones, 'comunas': comunas, 'tipos_propiedad': tipos_propiedad})
+        form = PropiedadForm()
+
+    tipos_propiedad = Tipo_propiedad.objects.all()
+    context = {
+        'form': form,
+        'regiones': regiones,
+        'comunas': comunas,
+        'tipos_propiedad': tipos_propiedad,
+        'region_seleccionada': region_seleccionada,
+    }
+    return render(request, 'publicar_propiedad.html', context)
+
 
 
 

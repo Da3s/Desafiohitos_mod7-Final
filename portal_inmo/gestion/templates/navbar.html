@@ -5,7 +5,7 @@
   <div class='col-auto'>
       <nav class="navbar navbar-expand-lg navbar-dark bg-dark f_nav">
           <div class="container-fluid">
-              <a class="navbar-brand" href="{% url 'indice' %}">Inicio</a>
+              <a class="navbar-brand" href="{% url 'indice' %}">Portal Inmobiliario</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                   <span class="navbar-toggler-icon"></span>
               </button>
@@ -35,7 +35,7 @@
 
                       {% endif %}
                       
-                      {% if user.is_authenticated %}    
+                      {% if user.is_authenticated %}   
                       <li class="nav-item">
                         <form method="post" action="{% url 'logout' %}" style="display: inline;">
                           {% csrf_token %}
